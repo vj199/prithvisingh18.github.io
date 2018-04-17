@@ -22,3 +22,6 @@ body {
   right: 0;
   z-index: -1;
 }
+.w3-lobster {
+  font-family: "Lobster", Sans-serif;
+}
