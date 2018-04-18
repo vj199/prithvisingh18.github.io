@@ -17,52 +17,84 @@
 </head>
 
 <body>
-
   <div class="container w3-container w3-padding-16 w3-mobile">
     <div class="w3-container w3-lobster font-effect-brick-sign">
         <div class="w3-half">
           <p class="w3-xxxlarge">Prithvi Singh</p>
         <img src="assets/profile.jpeg" class="w3-round" alt="Sorry photo could not be loaded."> 
         </div>
-        <!-- Skills -->
-        <div class="w3-half w3-lobster">
-        <p class="w3-xxxlarge">Skills</p>
-        <h3>GitHub</h3>
-        <div class="w3-light-grey">
-            <div class="w3-red" style="height:24px;width:60%"></div>
-          </div>
-          <h3>Programming</h3>
-          <div class="w3-light-grey">
-              <div class="w3-red" style="height:24px;width:80%"></div>
+          <div class="w3-container w3-half w3-padding-16 w3-mobile ">
+  
+            <button onclick="open_skill('skill')" class="w3-btn w3-block w3-black w3-left-align">Skills</button>
+                      <div id="skill" class="w3-container w3-hide">
+                          <!-- Skills -->
+                    <div class="w3-lobster">
+                      <p class="w3-xxxlarge">Skills</p>
+                      <h3>GitHub</h3>
+                      <div class="w3-light-grey">
+                          <div class="w3-red" style="height:24px;width:60%"></div>
+                        </div>
+                        <h3>Programming</h3>
+                        <div class="w3-light-grey">
+                            <div class="w3-red" style="height:24px;width:80%"></div>
+                          </div>
+                        <h3>Web Technologies</h3>
+                        <div class="w3-light-grey">
+                            <div class="w3-red" style="height:24px;width:70%"></div>
+                        </div>
+                        <h3>Mobile Technologies</h3>
+                        <div class="w3-light-grey">
+                            <div class="w3-red" style="height:24px;width:50%"></div>
+                        </div>
+                        <h3>Computer Science Fundamentals</h3>
+                        <div class="w3-light-grey">
+                            <div class="w3-red" style="height:24px;width:70%"></div>
+                        </div>
+                        <p class="w3-xxlarge">Technologies Familier With</p>
+                        <p class="w3-xlarge">Node.js,Angular,Unity3D,Android Studio,Web Assembly,etc</p>                     
+                      </div>
+              
+                    </div>
             </div>
-          <h3>Web Technologies</h3>
-          <div class="w3-light-grey">
-              <div class="w3-red" style="height:24px;width:70%"></div>
-          </div>
-          <h3>Mobile Technologies</h3>
-          <div class="w3-light-grey">
-              <div class="w3-red" style="height:24px;width:50%"></div>
-          </div>
-          <h3>Computer Science Fundamentals</h3>
-          <div class="w3-light-grey">
-              <div class="w3-red" style="height:24px;width:70%"></div>
-          </div>
-          <p class="w3-xxlarge">Technologies Familier With</p>
-          <p class="w3-xlarge">Node.js,Angular,Unity3D,Android Studio,Web Assembly,etc</p>                     
-        </div>
+              
+            <div class="w3-container w3-half ">
+  
+                <button onclick="open_skill('projects')" class="w3-btn w3-block w3-black w3-left-align">Projects</button>
+                          <div id="projects" class="w3-container w3-hide">
+                              <!--Projects -->
+                              <div class="w3-lobster">
+                                  <p class="w3-xxxlarge">Projects</p>
+                        
+                                </div>
+                                
+                        </div>
+                </div>
+             
+
+            </div>
+            <script>
+            function open_skill(id) {
+                var x = document.getElementById(id);
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else { 
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+            </script>
+        
 
       </div>
 
-      <div class="w3-lobster">
-          <p class="w3-xxxlarge">Projects</p>
+      
 
-        </div>
       <div>
 
       </div>
     
   </div>
-  </div>
+
+ 
 <!-- particles.js container -->
 <canvas class="background" style="height:100%;width:100%;"></canvas>
 
