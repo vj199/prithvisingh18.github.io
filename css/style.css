@@ -28,5 +28,19 @@ body {
   z-index: -1;
 }
 .w3-lobster {
-  font-family: "Lobster", Sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+#profpic {
+  width: 80%;
+  height: 80%;
+  border-radius: 10px;
+  padding-right: 5px;
+}
+.social-media-links{
+  width: 80%;
+}
+
+.full-size{
+  width: 100%;
+  height: 100%;
 }
