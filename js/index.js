@@ -2,8 +2,14 @@ console.log(window.innerWidth);
 
 var particles = Particles.init({
 	selector: '.background',
-  color: ['#DA0463', '#404B69', '#DBEDF3'],
+  color: ['#DA0463', '#404B69'],
   connectParticles: true,
-  retina_detect: true
-
+  responsive: [{
+  	breakpoint: 800,
+    options: {
+    	color: '#00C9B1',
+    	maxParticles: 80,
+      connectParticles: false
+    }
+  }]
 });
