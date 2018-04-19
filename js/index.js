@@ -1,5 +1,3 @@
-console.log(window.innerWidth);
-
 var particles = Particles.init({
 	selector: '.background',
   color: ['#DA0463', '#404B69'],
